@@ -1,0 +1,11 @@
+Model,Seed,Training Success (%),Evaluation Success (%)
+Baseline,10,0.0,0.0
+Baseline,20,9.16,74.8
+Baseline,30,0.0,0.0
+Baseline,40,0.0,0.0
+Baseline,50,0.0,0.0
+Improved,10,39.15,75.7
+Improved,20,39.22,76.3
+Improved,30,39.64,75.7
+Improved,40,38.97,76.3
+Improved,50,38.55,75.7

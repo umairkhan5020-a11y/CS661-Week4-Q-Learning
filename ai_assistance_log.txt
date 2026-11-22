@@ -1,0 +1,98 @@
+
+CS 661 WEEK 4
+TASK 2: AI PAIR-PROGRAMMING LOG
+
+AI TOOL: ChatGPT
+PROGRAMMING LANGUAGE: Python
+ENVIRONMENT: Gymnasium FrozenLake-v1 (4x4, slippery)
+
+1. INITIAL IMPLEMENTATION
+
+User request/context:
+Assistance with implementing the Week 4 Q-learning assignment in Python, one step at a time.
+
+AI response:
+ChatGPT recommended Gymnasium FrozenLake and supplied a tabular Q-learning implementation using NumPy and Matplotlib.
+
+Accepted:
+FrozenLake environment, Q-table, epsilon-greedy action selection, Q-learning update equation, 10,000 training episodes and reward graph.
+
+Actual result:
+First baseline training success rate: 31.85%.
+
+2. AI-SUGGESTED IMPROVEMENT
+
+User request/context:
+Continue the assignment by improving the baseline Q-learning agent.
+
+AI response:
+ChatGPT suggested epsilon decay to reduce random exploration gradually during training.
+
+Accepted settings:
+Initial epsilon = 1.0
+Minimum epsilon = 0.01
+Epsilon decay factor = 0.9995
+
+Actual result:
+First improved training success rate: 39.88%.
+
+3. DEBUGGING AND FILE MANAGEMENT
+
+AI assistance:
+ChatGPT helped activate the Python virtual environment, install Gymnasium, resolve Terminal command errors and save separate baseline and improved code files.
+
+Correction:
+Python statements such as epsilon = 0.1 must be edited inside the Python file, not entered directly into the macOS Terminal.
+
+Correction:
+Matplotlib's plt.show() kept Terminal occupied until the graph window was closed. The noninteractive Agg backend was later used for automated runs.
+
+4. MODEL EVALUATION
+
+AI response:
+ChatGPT supplied evaluation code to test saved Q-tables over 1,000 episodes without updating the learned values.
+
+Actual results:
+Baseline evaluation: 0.00%.
+Improved evaluation: 74.60%.
+
+Limitation identified:
+The saved baseline Q-table came from a later unsuccessful training run, so the evaluation did not fairly represent the original successful baseline run.
+
+5. CONTROLLED EXPERIMENT
+
+AI response:
+ChatGPT suggested repeated experiments with fixed seeds and supplied code for five training runs per model.
+
+Accepted:
+Seeds 10, 20, 30, 40 and 50.
+10,000 training episodes per run.
+1,000 evaluation episodes per trained model.
+CSV output and comparison graph.
+
+Actual controlled results:
+Baseline mean evaluation success: 14.96%.
+Baseline standard deviation: 33.45 percentage points.
+
+Improved mean evaluation success: 75.94%.
+Improved standard deviation: 0.33 percentage points.
+
+Observed difference:
+60.98 percentage points in mean evaluation success.
+
+6. CRITICAL EVALUATION OF AI ASSISTANCE
+
+Accepted:
+The Q-learning implementation, epsilon-decay improvement, graph generation and repeated evaluation approach.
+
+Corrected:
+The initial single-run comparison was insufficient because training results varied substantially between runs. Repeated experiments were introduced.
+
+Limitation:
+The comparison uses five training seeds and different exploration schedules. The findings cannot establish that epsilon decay always performs better.
+
+AI contribution:
+ChatGPT provided code suggestions, debugging guidance and experiment design assistance.
+
+Student contribution:
+Executed the code locally, inspected Terminal outputs, verified saved files, implemented the suggested changes and reviewed the actual experimental results.

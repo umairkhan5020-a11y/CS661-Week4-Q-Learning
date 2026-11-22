@@ -1,0 +1,17 @@
+
+Baseline Q-learning
+Evaluation episodes: 1000
+Successful episodes: 0
+Evaluation success rate: 0.00%
+Average reward: 0.0000
+
+Improved Q-learning
+Evaluation episodes: 1000
+Successful episodes: 746
+Evaluation success rate: 74.60%
+Average reward: 0.7460
+
+Evaluation comparison
+Baseline: 0.00%
+Improved: 74.60%
+Difference: +74.60 percentage points
